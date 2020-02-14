@@ -10,7 +10,7 @@ run_shiny_app<- function(){
 
         loc_shiny <- system.file("shiny", "SurivalGraphs",package = "MidDatAnalysis")
         if (loc_shiny == "") {
-                stop("Could not find MidDatAnalysis. Try re-installing `MidDatAnalysis`.", call. = FALSE)
+                stop(" MidDatAnalysis was not found. Please reinstall `MidDatAnalysis`.", call. = FALSE)
         }
 
         shiny::runApp(loc_shiny, display.mode = "normal", launch.browser = T)
