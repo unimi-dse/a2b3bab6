@@ -10,10 +10,10 @@ import_data()
 This function returns the  dafaframe after its created.
 }
 \description{
-This function reads the data from a csv-file and returns it as a DataFrame-object.It also handles missing age data using locf.
+This function reads the data from a csv-file and returns it as a DataFrame-object.
 }
 \details{
-This functions downloads the train.csv file from the package to the user's local and creates a dataframe.It then handles missing data and stores the dataframe to a .rda file under the data folder.
+This functions downloads the train.csv file from the package to the user's local and creates a dataframe.
 }
 \examples{
 import_data()

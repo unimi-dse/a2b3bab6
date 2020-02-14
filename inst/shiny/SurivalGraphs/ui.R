@@ -3,6 +3,7 @@
 #loading required libraries
 library(shiny)
 library(shinydashboard)
+library(ggplot2)
 
 #The main UI code.
     shinyUI(

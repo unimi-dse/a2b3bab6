@@ -9,18 +9,17 @@
 import_data <- function() {
 
         #importing data from file.
-        df <- readr::read_csv(system.file("extdata", "train.csv", package="MidDatAnalysis"))
+        df = readr::read_csv(system.file("extdata", "train.csv", package="MidDatAnalysis"))
 
 #
 #         # as for this dataset we have a lot of missing values for the Age feature
 #         # we will be using the locf(last observation carried forward) function from Zoo package
 #         # to fill the NA values.
 #
-        df <- zoo::na.locf(df)
-#
 #         #saving df in a rda file,overwriting the file if already present:
-#         usethis::use_data(df, overwrite = TRUE)
+         usethis::use_data(df, overwrite = TRUE)
 
         #returning the main dataset df.
-        return(df)
+         return(df)
+
 }

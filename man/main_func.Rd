@@ -7,7 +7,7 @@
 main_func()
 }
 \value{
-imports the data from the file and runs the shiny app.
+imports the data from the file and runs a detailed report.
 }
 \description{
 This function is called to invoke all the other functions.
