@@ -9,7 +9,7 @@
 import_data <- function() {
 
         #importing data from file.
-        df <- read_csv(system.file("extdata", "train.csv", package="MidDatAnalysis"))
+        df <- readr::read_csv(system.file("extdata", "train.csv", package="MidDatAnalysis"))
 
 #
 #         # as for this dataset we have a lot of missing values for the Age feature
