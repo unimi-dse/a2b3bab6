@@ -3,7 +3,7 @@ Type: Package
 Title: Analysis of survival of Titanic passengers.
 Version: 0.1.0
 Author: Subhradip Halder
-Maintainer:Subhradip Halder <subhradip.halder@gmail.com>
+Maintainer:Subhradip Halder <subhradipmsm@gmail.com>
 Description: This package analyses the data of a list of passangers on titanic 
              and analyses the survival rate based on certain factors, such as class, sex, age, etc.
 Imports: 
