@@ -17,7 +17,7 @@ import_data <- function() {
 #         # to fill the NA values.
 #
 #         #saving df in a rda file,overwriting the file if already present:
-         usethis::use_data(df, overwrite = TRUE)
+         # usethis::use_data(df, overwrite = TRUE)
 
         #returning the main dataset df.
          return(df)
