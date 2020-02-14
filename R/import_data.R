@@ -11,6 +11,9 @@ import_data <- function() {
         #importing data from file.
         df = readr::read_csv(system.file("extdata", "train.csv", package="MidDatAnalysis"))
 
+        #creating a .rda file with the df dataframe.
+        usethis::use_data(df,overwrite = TRUE)
+
         #returning the main dataset df.
          return(df)
 
