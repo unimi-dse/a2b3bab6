@@ -12,9 +12,11 @@ import_data <- function() {
         df = readr::read_csv(system.file("extdata", "train.csv", package="MidDatAnalysis"))
 
         #creating a .rda file with the df dataframe.
-        usethis::use_data(df,overwrite = TRUE)
+        b <-usethis::use_data(df,overwrite = TRUE)
+
+        b_df <- list(df,b)
 
         #returning the main dataset df.
-         return(df)
+         return(b_df)
 
 }
