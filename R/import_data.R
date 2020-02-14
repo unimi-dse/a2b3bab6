@@ -1,7 +1,7 @@
 # Imports the data from CSV into a Dataframe (DF)
 #' @title Imports Data from csv file and stores it in a df.
-#' @description This function reads the data from a csv-file and returns it as a DataFrame-object.It also handles missing age data using locf.
-#' @details This functions downloads the train.csv file from the package to the user's local and creates a dataframe.It then handles missing data and stores the dataframe to a .rda file under the data folder.
+#' @description This function reads the data from a csv-file and returns it as a DataFrame-object.
+#' @details This functions downloads the train.csv file from the package to the user's local and creates a dataframe.
 #' @return This function returns the  dafaframe after its created.
 #' @import readr
 #' @examples import_data()
