@@ -16,7 +16,7 @@ import_data <- function() {
 #         # we will be using the locf(last observation carried forward) function from Zoo package
 #         # to fill the NA values.
 #
-#         df <- zoo::na.locf(df)
+        df <- zoo::na.locf(df)
 #
 #         #saving df in a rda file,overwriting the file if already present:
 #         usethis::use_data(df, overwrite = TRUE)
