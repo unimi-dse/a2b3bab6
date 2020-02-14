@@ -1,4 +1,3 @@
-#### This  package is facing some issues with the shiny application. The rest of the functions work. Debugging in progress. Please come back later. 
 
 ### Survival Analysis of Titanic passengers. 
 
@@ -31,7 +30,7 @@ require(MidDatAnalysis)
 
 #### Functions
 
-* __main_func( )__ - *This function first calls __import_data()__ and imports the data from a csv file and imports it into a dataframe.It also calls  create_detailed_report( ) which uses the DataExplorer package to run a detailed report and all the parameters of the df dataframe. It saves all the analysis in a report.html file and opens automatically in a browser.*
+* __main_func( )__ - *This function first calls __import_data()__ and imports the data from a csv file and imports it into a dataframe.It also calls the __run_shiny_app( )__ which calls the shiny app  which diplayes all the analysis graphs, raw data, project summary*
 
 * __import_data( )__ - *This function  imports the data from a csv file and imports it into a dataframe :df.It also handles some missing values and finally stores the df into a rda file.It returns the created df as an output*
 
