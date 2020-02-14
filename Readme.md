@@ -1,4 +1,5 @@
-### This  package is facing some issues. Debugging in progress. Please come back later. 
+#### This  package is facing some issues with the shiny application. The rest of the functions work. Debugging in progress. Please come back later. 
+
 ### Survival Analysis of Titanic passengers. 
 
 Package Name             | Author                                                                 |Github Repo
