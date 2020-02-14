@@ -31,7 +31,7 @@ require(MidDatAnalysis)
 
 #### Functions
 
-* __main_func( )__ - *This function first calls __import_data()__ and imports the data from a csv file and imports it into a dataframe.It also calls a shiny app which shows the detailed analysis.*
+* __main_func( )__ - *This function first calls __import_data()__ and imports the data from a csv file and imports it into a dataframe.It also calls  create_detailed_report( ) which uses the DataExplorer package to run a detailed report and all the parameters of the df dataframe. It saves all the analysis in a report.html file and opens automatically in a browser.*
 
 * __import_data( )__ - *This function  imports the data from a csv file and imports it into a dataframe :df.It also handles some missing values and finally stores the df into a rda file.It returns the created df as an output*
 
