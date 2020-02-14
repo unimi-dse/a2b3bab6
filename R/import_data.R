@@ -14,9 +14,11 @@ import_data <- function() {
         #creating a .rda file with the df dataframe.
         b <-usethis::use_data(df,overwrite = TRUE)
 
+        #creating a list to store both the variables,df and b.
         b_df <- list(df,b)
 
-        #returning the main dataset df.
+
+        #returning the list. This will create the df and also create the rda file at the same time.Whic will make df avaiable for the other functions.
          return(b_df)
 
 }
