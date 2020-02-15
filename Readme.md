@@ -32,7 +32,7 @@ require(MidDatAnalysis)
 
 * __main_func( )__ - *This function first calls __import_data()__ and imports the data from a csv file and imports it into a dataframe.It also calls the __run_shiny_app( )__ which calls the shiny app  which diplayes all the analysis graphs, raw data, project summary*
 
-* __import_data( )__ - *This function  imports the data from a csv file and imports it into a dataframe :df.It also handles some missing values and finally stores the df into a rda file.It returns the created df as an output*
+* __import_data( )__ - *This function  imports the data from a csv file and imports it into a dataframe *
 
 * __survivor_age_mean( )__ - *This function  uses the df dataframe and performes an analysis on the mean age of the passengers who survived and  also plots the analysis on a histogram*
 
@@ -50,13 +50,8 @@ require(MidDatAnalysis)
 
 2. You can directly run the Shiny app using the function __run_shiny_app( )__.
 
-3. __Please run the *import_data( )* function first, if you want to run the following functions individually:__
-    * survivor_age_mean( )
-    * survival_mean_class( )
-    * survival_sex_rel( )
-    * create_detailed_report( )
 
-4. You can run the __create_detailed_report( )__ function at the end to give you the detailed report.
+3. You can run the __create_detailed_report( )__ function at the end to give you the detailed report.
 
 #### About the author:
 
