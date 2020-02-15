@@ -4,7 +4,7 @@
 \alias{survivor_age_mean}
 \title{Survivor Age Mean}
 \usage{
-survivor_age_mean(default = df)
+survivor_age_mean()
 }
 \arguments{
 \item{df:}{The titanic train data set which we imported and converted to df dataframe.}
@@ -20,9 +20,6 @@ The mean age of the survivors and the most proobable age of survival and the gra
 }
 \description{
 This function analyses and returns the mean age among the people who survived.Its also gives the age group, which is most likely to survive.
-}
-\note{
-To use this function by itself, you need to first run import_data() function.Then run the functions by writing survivor_age_mean(df)
 }
 \examples{
 survivor_age_mean()

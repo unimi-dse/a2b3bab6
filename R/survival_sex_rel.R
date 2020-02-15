@@ -1,8 +1,7 @@
 # Analyse survival rate based on Sex.
 #' @title Survival rate based on Sex.
 #' @description This function analyses the relationship between Survival rate and sex of the passengers.
-#' @note  To use this function by itself, you need to first run import_data() function to import the  Titanic df from the train.csv file.
-#' @param df: The titanic train data set which we imported and converted to df dataframe.
+#' @param df: The titanic train data set which we imported and converted to  dataframe.
 #' @param sub_sex : subset which contains just the sex and survival rate of passenger
 #' @param fem_total :total females in the ship
 #' @param male_total :total males in the ship
@@ -17,7 +16,9 @@
 #' @export
 
 
-survival_sex_rel <- function(default=df){
+survival_sex_rel <- function(){
+        library(ggplot2)
+        df <- MidDatAnalysis::titanic_data
         sub_sex <- data.frame(df$Survived,df$Sex)
         colnames(sub_sex)= c("Survived","Sex")
         sub_sex$Survived[sub_sex$Survived==1] <-'Survived'

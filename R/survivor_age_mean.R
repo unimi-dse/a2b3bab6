@@ -1,7 +1,6 @@
 # Calculate the mean age of survivors
 #' @title Survivor Age Mean
 #' @description This function analyses and returns the mean age among the people who survived.Its also gives the age group, which is most likely to survive.
-#' @note  To use this function by itself, you need to first run import_data() function.Then run the functions by writing survivor_age_mean(df)
 #' @param df: The titanic train data set which we imported and converted to df dataframe.
 #' @param sboa Variable to store the output of the analysis.
 #' @param plot_age : subset to store a dataframe containting age and survival rate.
@@ -10,8 +9,10 @@
 #' @import ggplot2
 #' @examples survivor_age_mean()
 #' @export
-survivor_age_mean <- function(default=df){
+survivor_age_mean <- function(){
 
+        library(ggplot2)
+        df <- MidDatAnalysis::titanic_data
         Subage <- subset(df,Survived ==Survived,Age)
 
         sboa <-paste ("The mean age of the survivors was :",colMeans(Subage,na.rm = TRUE),"so we can say that the passengers around the age of :", round(colMeans(Subage,na.rm = TRUE),digits = -1),"had higher chances of survival")

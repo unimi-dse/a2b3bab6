@@ -1,4 +1,4 @@
-## Changing some code to fetch the data.Updating in progress.Please come back later.
+
 ### Survival Analysis of Titanic passengers. 
 
 Package Name             | Author                                                                 |Github Repo

@@ -1,24 +1,25 @@
-# Imports the data from CSV into a Dataframe (DF)
-#' @title Imports Data from csv file and stores it in a df.
-#' @description This function reads the data from a csv-file and returns it as a DataFrame-object.
+# Imports the data from CSV into a Dataframe
+#' @title Imports Data from csv file and stores it in a dataframe.
+#' @description This function reads the data from a csv-file and returns the  package data.
 #' @details This functions downloads the train.csv file from the package to the user's local and creates a dataframe.
-#' @return This function returns the  dafaframe after its created.
-#' @import readr
+#' @return This function returns the  package data after its created.
 #' @examples import_data()
 #' @export
 import_data <- function() {
-
         #importing data from file.
-        df <- readr::read_csv(system.file("extdata", "train.csv", package="MidDatAnalysis"))
-
-        #creating a .rda file with the df dataframe.
-        b <-usethis::use_data(df,overwrite = TRUE)
-
-        #creating a list to store both the variables,df and b.
-        b_df <- list(df,b)
+        titanic_data <- read.csv(system.file("extdata", "train.csv", package="MidDatAnalysis"))
 
 
-        #returning the list. This will create the df and also create the rda file at the same time.Whic will make df avaiable for the other functions.
-         return(b_df)
+        # as for this dataset we have a lot of missing values for the Age feature
+        # we will be using the locf(last observation carried forward) function from Zoo package
+        # to fill the NA values.
+
+        titanic_data <- zoo::na.locf(titanic_data)
+
+        #saving df in a rda file,overwriting the file if already present:
+        usethis::use_data(titanic_data,overwrite = TRUE)
+
+        #returning the main dataset df.
+        return(titanic_data)
 
 }

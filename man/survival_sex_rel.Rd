@@ -4,10 +4,10 @@
 \alias{survival_sex_rel}
 \title{Survival rate based on Sex.}
 \usage{
-survival_sex_rel(default = df)
+survival_sex_rel()
 }
 \arguments{
-\item{df:}{The titanic train data set which we imported and converted to df dataframe.}
+\item{df:}{The titanic train data set which we imported and converted to  dataframe.}
 
 \item{sub_sex}{: subset which contains just the sex and survival rate of passenger}
 
@@ -30,9 +30,6 @@ sex_rel_ans : returns the analysis and also the graphical representation.
 }
 \description{
 This function analyses the relationship between Survival rate and sex of the passengers.
-}
-\note{
-To use this function by itself, you need to first run import_data() function to import the  Titanic df from the train.csv file.
 }
 \examples{
 survival_sex_rel()

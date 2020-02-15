@@ -5,6 +5,9 @@ library(shiny)
 library(shinydashboard)
 library(ggplot2)
 
+#loading the dataset
+df <- MidDatAnalysis::titanic_data
+
 #The main UI code.
     shinyUI(
         dashboardPage(

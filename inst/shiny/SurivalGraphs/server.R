@@ -1,4 +1,5 @@
 #shiny server
+df <- MidDatAnalysis::titanic_data
 shinyServer(function(input,output){
 
     output$sex_rel <-renderPlot({
