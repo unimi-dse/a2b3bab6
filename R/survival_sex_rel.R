@@ -18,6 +18,7 @@
 
 survival_sex_rel <- function(){
         library(ggplot2)
+
         df <- MidDatAnalysis::titanic_data
         sub_sex <- data.frame(df$Survived,df$Sex)
         colnames(sub_sex)= c("Survived","Sex")
