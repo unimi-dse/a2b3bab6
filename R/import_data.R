@@ -18,8 +18,9 @@ import_data <- function() {
         titanic_data <- zoo::na.locf(titanic_data)
 
         #saving df in a rda file,overwriting the file if already present:
-        use_data(titanic_data,overwrite = TRUE)
+        # use_data(titanic_data,overwrite = TRUE)
+
 
         #returning the main dataset df.
-
+        return(titanic_data)
 }
