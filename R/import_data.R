@@ -21,6 +21,5 @@ import_data <- function() {
         use_data(titanic_data,overwrite = TRUE)
 
         #returning the main dataset df.
-        return(MidDatAnalysis::titanic_data)
 
 }
