@@ -29,7 +29,7 @@ survival_sex_rel <- function(){
         sur_sex <-subset(sub_sex,Survived=='Survived',Sex)
         female_survived<-sum(sur_sex$Sex=='female')
         male_survived <-sum(sur_sex$Sex=='male')
-        mf.total <- paste("Total Passengers:",fem_total+male_total,"Total Female :",fem_total,"Total Male :",male_total,"Survived female:",female_survived,"and survived male :",male_survived)
+        mf.total <- paste("Total Passengers:",fem_total+male_total,"Total Female :",fem_total,"Total Male :",male_total,"Survived female:",female_survived,"and survived male :",male_survived," Which means that :  Female passengers had higher chances of survival than male passengers")
 
         #plotting the relationship:
 
